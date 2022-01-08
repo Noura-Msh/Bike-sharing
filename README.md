@@ -7,12 +7,16 @@ The goal of this project was to use a multiple linear regression model for the p
 This dataset contains the seasonal and weekly count of rental bikes between years 2011 and 2012 in Capital bikeshare system with the corresponding temperature and humidity information. Bike sharing systems are a new way of traditional bike rentals. The whole process to from membership to rental and return back has become automatic. Given below is the description of the data which is a (17379,17) shaped data,
 
 # Algorithms
-• Feature Engineering The provided data in Its raw form wasn't directly use as an input to the model serval future engineering was carried out where a few features we modified few were dropped *just 1-Encode categorical column (Hour, season) drop first column 2-Scalar numerical column 3- Fill zero value in windspeed 4- cross validation
+• Feature Engineering The provided data in Its raw form wasn't directly use as an input to the model serval future engineering was carried out where a few features we modified few were dropped *just 
+1- Encode categorical column (Hour, season) drop first column 
+2- Scalar numerical column 
+3- Fill zero value in windspeed 
+4- cross validation
 
 # Models
 linear regression , polynomial , Ridge regression , lasso regression Model Evaluation and selection The entire training dataset of 17379 was split 25/75 train vs. holdout And all scores reported below were calculated with 5-fold cross validation on the training portion only. Prediction on the 25% holdout were limited to the very end so this split was only used and scores seen just The official metric for Bike Sharing Data was regression rate; Final regression 5-fold CV scores: 33features 
 
-* • linear regression, ACCURCY(0.69)  
-* • Polynomial degree(2), ACCURCY(0.90) 
-* • Ridge regression, ACCURCY(0.69) 
-* •lasso regression, ACCURCY(0.69)
+* linear regression, ACCURCY(0.69)  
+* Polynomial degree(2), ACCURCY(0.90) 
+* Ridge regression, ACCURCY(0.69) 
+* lasso regression, ACCURCY(0.69)
